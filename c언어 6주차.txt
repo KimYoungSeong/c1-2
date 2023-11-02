@@ -1,0 +1,118 @@
+/*#include <stdio.h>
+
+int main(void){
+	int i,j;
+
+	printf("한개의 정수를 입력하세요.");
+	scanf_s("%d", &j);
+
+	for (i = 1; i <= j; i++) {
+		if (j % i == 0) {
+			printf("%d ", i);
+		}
+	}
+
+}*/
+/*#include <stdio.h>
+
+int main(void) {
+	int i, j;
+	int k = 0;
+
+	printf("한개의 정수를 입력하세요.");
+	scanf_s("%d", &j);
+
+	for (i = 1; i <= j; i++) {
+		if (j % i == 0) {
+			k = k + 1;
+		}
+	}
+	printf("약수의 개수는 %d개 입니다.", k);
+
+}*/
+/*#include <stdio.h>
+
+int main(void) {
+	int i, j;
+	int k = 0;
+
+	printf("한개의 정수를 입력하세요.");
+	scanf_s("%d", &j);
+
+	for (i = 1; i <= j; i++) {
+		if (j % i == 0) {
+			k = k + 1;
+		}
+	}
+	if (k == 2) {
+		printf("소수");
+	}
+	else {
+		printf("소수 아님");
+	}
+
+}*/
+/*#include <stdio.h>
+
+int main(void) {
+	int i, j, l;
+	int k = 0;
+
+	printf("한개의 정수를 입력하세요.");
+	scanf_s("%d", &j);
+
+	for (i = 1; i <= j; i++) {
+		for (l = 1; l <= i; l++) {
+			if (i % l == 0) {
+				k = k + 1;
+			}
+			if (k == 2) {
+				printf("%d ",i);
+				k = 0;
+			}
+			break;
+		}
+		
+	}
+} 입력한 정수 사이에 있는 소수 모두 출력하기*/
+/*#include <stdio.h>
+
+int main(void) {
+	int i = 0;
+	int	j = 0;
+
+	printf("두개의 정수를 입력하세요.");
+	scanf_s("%d", i);
+	scanf_s("%d", j);
+
+
+	if (i > 0 && j > 0) {
+		printf("1사분면");
+	}
+	else if (i < 0 && j > 0) {
+		printf("2사분면");
+	}
+	else if (i > 0 && j < 0) {
+		printf("3사분면");
+	}
+	else if (i < 0 && j < 0) {
+		printf("4사분면");
+	}
+	else{
+		printf("0");
+	}
+
+}*/
+#include <stdio.h>
+
+int main(void) {
+	int arr[5];
+	int i, sum = 0, avg;
+	for (i = 0; i < 5; i++) {
+		scanf_s("%d", &arr[i]);
+		sum += arr[i];
+	}
+	avg = sum / (sizeof(arr) / sizeof(int));
+	printf("총점 : %d, 평균 : %d \n", sum, avg);
+
+}

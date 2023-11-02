@@ -1,0 +1,107 @@
+/*#include <stdio.h>
+
+int main(void) {
+
+	int i = 1;
+	int j = 1;
+	int k = 1;
+
+	for (i = 1; i <= 5; i++)
+	{
+		for(k = 1; k <= i-1; k++ )
+		{
+			printf("");
+		}
+		for (j = 1; j<=6-i; j++)
+			{
+				printf("*");
+			}
+		printf("\n");
+	}
+	return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+
+	int i = 1;
+	int	j = 1;
+	int k = 1;
+
+	for (i = 1; i <= 5; i++)
+	{
+		for(k = 1; k <= 5 - i; k++ )
+		{
+			printf(" ");
+		}
+		for (j = 1; j <= 2 * i - 1; j++)
+			{
+				printf("*");
+			}
+		printf("\n");
+	}
+	return 0;
+}*/
+
+/*#include <stdio.h>
+
+int main(void) {
+	char ch = '\0';
+
+	int i = 1, sum = 0;
+	
+	while (ch != 'q') {
+		sum += i;
+		scanf_s("%c", &ch);
+	}
+	printf("지금까지 합계 : %d", sum);
+	return 0;
+}
+ while문 변형 1은 무조건 적인 참
+	while (1) {
+		sum += i;
+		scanf_s("%c", &ch);
+		if (ch =='q')
+		break;
+	}
+
+*/
+
+/*#include <stdio.h>
+
+int main(void) {
+	int num = 1;
+
+	while (num != 0)
+	{
+		printf("한개의 정수를 입력하세요");
+		scanf_s("%d", &num);
+
+		if (num == 0)
+		{
+			printf("0입니다.");
+		}
+		else if(num % 2 == 0) 
+		{
+			printf("짝수입니다.\n");
+		}
+		else
+		{
+			printf("홀수입니다.\n");
+		}
+	}
+	return 0;	
+}*/
+
+#include <stdio.h>
+
+int main(void) {
+	int i;
+	for (i = 0; i <= 10; i++)
+	{
+		if (i % 2 == 0)
+			continue; //참일경우 컨티뉴에 의해서 다시 앞으로 가기 때문에 출력되지 않는다.
+		printf("%d", i);
+	}
+}
