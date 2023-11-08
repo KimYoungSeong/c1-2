@@ -1,31 +1,19 @@
-#include <stdio.h>
-int main(void) {
+/*#include <stdio.h>
+#define ROWSIZE 5
+#define COLSIZE 5
+int main(){
 
-	int i = 0;
-	int j = 0;
-	int a = 0;
-	int b = 1;
-	int c = 1;
+	int num[ROWSIZE][COLSIZE] = {};
+	int i;
+	int j;
+	int k = 1;
 
-	printf("한개의 정수를 입력하세요");
-	scanf_s("%d", &i);
-
-	if (i == 1) {
-		printf("%d", a);
-		return 0;
-	}
-	else if (i == 2) {
-		printf("%2d %2d", a, b);
-		return 0;
-	}
-	else {
-		printf("%2d %2d", a, b);
-		for (j = 1; j < i - 1; j++) {
-			c = a + b;
-			printf(" %2d ", c);
-			a = b;
-			b = c;
+	for (i = 0; i < 5; i++) {
+		for (j = 0; j < 5; j++) {
+			num[i][j] = k;
+				k++;
+				printf("%2d ", num[i][j]);
 		}
-		return 0;
+		printf("\n");
 	}
-}
+}*/
