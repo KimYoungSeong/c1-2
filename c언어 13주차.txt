@@ -101,10 +101,12 @@ int main() {
 	int arr[3] = { 10,20,30 };
 	int brr[3] = { 100,200,300 };
 	swap(arr, brr);
+	printf("arr : ");
 	for (i = 0; i < 3; i++)
 	{
 		printf("%d ", arr[i]);
 	}
+	printf("\nbrr : ");
 	for (i = 0; i < 3; i++)
 	{
 		printf("%d ", brr[i]);
